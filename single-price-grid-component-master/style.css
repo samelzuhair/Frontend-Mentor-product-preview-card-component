@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Karla", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  background-color: hsl(204, 43%, 93%);
+}
+
+.card {
+  display: grid;
+  grid-template-rows: 0.2fr 0.75fr;
+  max-width: 60rem;
+  overflow: hidden;
+  border-radius: 0.8rem;
+  background-color: white;
+  box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.sub-why-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* INFO-BOX-DESIGNES */
+
+.main-info-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding: 4rem;
+
+  justify-content: center;
+}
+
+.info-header {
+  color: hsl(179, 62%, 43%);
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+.info-secondary-header {
+  color: hsl(71, 73%, 54%);
+  font-size: 1.6rem;
+}
+
+.info-text {
+  color: hsl(218, 22%, 67%);
+  font-size: 1.4rem;
+}
+
+/* SUBSCRIPTION-BOX-DESIGNE */
+
+.subscription-box {
+  background-color: hsl(179, 62%, 43%);
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  gap: 0rem;
+}
+
+.subscription-header {
+  color: hsl(204, 43%, 93%);
+  font-size: 1.6rem;
+}
+
+.price {
+  display: flex;
+  gap: 1.8rem;
+  margin-top: 1.8rem;
+}
+
+.price-number {
+  color: white;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.price-text {
+  align-self: center;
+  color: hsla(203, 44%, 93%, 0.753);
+  font-size: 1.4rem;
+}
+
+.subscription-text {
+  margin-top: 0.8rem;
+  margin-bottom: 3rem;
+  color: hsl(204, 43%, 93%);
+  font-size: 1.4rem;
+}
+
+button {
+  border-radius: 0.4rem;
+  border-style: none;
+  align-self: center;
+  padding: 1.2rem;
+  width: 100%;
+  color: white;
+  background-color: hsl(71, 73%, 54%);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+/* WHY-BOX-DESIGNE */
+.why-us-box {
+  background-color: hsla(179, 62%, 43%, 0.8);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 4rem;
+  /* padding: 8rem; */
+}
+
+.why-header {
+  color: hsl(200deg 57% 91%);
+  font-size: 1.6rem;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  color: hsl(0 0% 100% / 0.7);
+  line-height: 1.8rem;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+@media (max-width: 34em) {
+  .card {
+    max-width: 60rem;
+    margin: 3rem;
+  }
+
+  .sub-why-box {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .main-info-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    padding: 3rem;
+
+    justify-content: center;
+  }
+
+  .info-header {
+    font-size: 2rem;
+  }
+
+  .info-secondary-header {
+    font-size: 1.6rem;
+    margin-bottom: 2.6rem;
+  }
+
+  .info-text {
+    line-height: 2.6rem;
+    font-size: 1.32rem;
+  }
+
+  .subscription-box {
+    padding: 3rem;
+  }
+
+  button {
+    padding: 1.6rem 1.2rem 1.6rem 1.2rem;
+    width: 100%;
+  }
+
+  .subscription-text {
+    letter-spacing: 0.02rem;
+  }
+
+  li {
+    line-height: 2rem;
+    font-size: 1.4rem;
+  }
+}
