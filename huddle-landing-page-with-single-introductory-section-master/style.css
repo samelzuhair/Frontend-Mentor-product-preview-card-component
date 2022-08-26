@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1.6rem;
+  display: flex;
+  color: #e9ecef;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-size: cover;
+  background-color: hsl(257, 40%, 49%);
+  background-image: url(/images/bg-desktop.svg);
+  background-repeat: no-repeat;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 134rem;
+  display: flex;
+  gap: 7.4rem;
+  /* background-image: url(/images/bg-desktop.svg); */
+}
+
+.logo-and-img-flex-box {
+  display: flex;
+  flex-direction: column;
+  gap: 7.4rem;
+}
+
+.huddle-logo {
+  width: 20rem;
+}
+
+.text-and-social-icon-flex-box {
+  display: flex;
+  gap: 9.6rem;
+  flex-direction: column;
+}
+
+.text-box {
+  margin-top: 18rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.main-header {
+  font-size: 4.4rem;
+  font-weight: 600;
+}
+
+.main-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  color: #dee2e6;
+}
+
+.btn {
+  color: hsl(257, 40%, 49%);
+  border: none;
+  border-radius: 4.4rem;
+  width: 36%;
+  font-size: 1.8rem;
+  padding: 1.6rem;
+  box-shadow: 0.1rem 0.4rem 0.9rem rgba(0, 0, 0, 0.36);
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  color: #e9ecef;
+  background-color: hsl(300, 69%, 71%);
+}
+
+.social-media-box {
+  margin-top: 5rem;
+  align-self: flex-end;
+  gap: 1.4rem;
+  display: flex;
+}
+
+.social-icon {
+  width: 4.4rem;
+  height: 4.4rem;
+  fill: #e9ecef;
+  border: 1.6px solid #e9ecef;
+  padding: 1.2rem;
+  border-radius: 100%;
+  transition: all 0.2s;
+}
+
+.social-icon:hover {
+  border: 1.6px solid hsl(300, 69%, 71%);
+
+  fill: hsl(300, 69%, 71%);
+  stroke: hsl(300, 69%, 71%);
+}
+
+/* MOBILE- 384px */
+
+@media (max-width: 24em) {
+  body {
+    background-size: contain;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 7.4rem;
+    margin: 3rem;
+  }
+
+  .text-box {
+    margin-top: 0rem;
+
+    gap: 3rem;
+  }
+
+  .main-header {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
+
+  .main-text {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #dee2e6;
+    letter-spacing: 0.04rem;
+    margin: 0 auto;
+  }
+
+  .btn {
+    align-self: center;
+    color: hsl(257, 40%, 49%);
+    border: none;
+    border-radius: 4.4rem;
+    width: 72%;
+    font-size: 1.6rem;
+    padding: 1.4rem;
+    box-shadow: 0.1rem 0.4rem 0.9rem rgba(39, 39, 39, 0.4);
+    transition: all 0.2s;
+  }
+
+  .social-media-box {
+    margin-top: 0rem;
+    align-self: center;
+    gap: 1.2rem;
+    display: flex;
+  }
+
+  .social-icon {
+    width: 3.6rem;
+    height: 3.6rem;
+    fill: #e9ecef;
+    border: 1.6px solid #e9ecef;
+    padding: 0.8rem;
+    border-radius: 100%;
+    transition: all 0.2s;
+  }
+
+  .huddle-logo {
+    width: 20rem;
+  }
+
+  .main-img {
+    width: 100%;
+  }
+}
